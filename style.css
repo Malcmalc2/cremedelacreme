@@ -1,0 +1,119 @@
+header {
+  position: relative;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('./img/creme.png') no-repeat center center scroll;
+    height: 46vh;
+  }
+  header video {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    background: url('./img/creme.png') no-repeat center center scroll;
+    height: 46vh;
+  }
+  header video {
+    display: none;
+  }
+
+  .row .col-md-4 {
+    margin-top: 1em;
+  }
+
+}
+
+body{
+  margin:0px;
+}
+
+.team {
+  padding-top: 1em;
+}
+
+h3.title {
+ padding-top: 1em;
+ margin-bottom: 1.5em;
+}
+
+.section {
+  margin-bottom: 2em;
+}
+
+h2 {
+  margin-top: 1em;
+}
+
+.section-team {
+  background-image: url(./img/IehB7.png);
+  background-position: center;
+}
+
+p.lead {
+  padding: 0 6em 0 6em;
+}
+
+p.description, .title {
+ color: white;
+ font-weight: 500;
+}
+
+.category {
+  color:#ffd0ff; 
+}
+
+.btn {
+  text-transform: uppercase;
+  border-radius: 300px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-xl {
+  padding: 1em 2em;
+}
+
+.btn-primary:hover {
+  background-color: #003366;
+  border-color: #003366;
+  border-width: 5px;
+  cursor: pointer;
+}
